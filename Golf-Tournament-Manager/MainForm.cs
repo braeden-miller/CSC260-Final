@@ -12,6 +12,7 @@ namespace Golf_Tournament_Manager
 {
     public partial class frmMain : Form
     {
+        private Tournament tournament = new Tournament();
         public frmMain()
         {
             InitializeComponent();
@@ -19,11 +20,16 @@ namespace Golf_Tournament_Manager
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            tblLeaderboard.Sort(tblLeaderboard.Columns["NetScore"], ListSortDirection.Descending);
-            Random random = new Random();
-            for (int i = 0; i < 50; i++)
+        }
+
+        private void btnEditTournament_Click(object sender, EventArgs e)
+        {
+            var tournamentForm = new frmEditTournament(tournament);
+            if (tournamentForm.ShowDialog() == DialogResult.OK)
             {
-                tblLeaderboard.Rows.Add("Test", random.Next(-5,15));
+                txtEventName.Text = tournament.Name;
+                txtEventDate.Text = $"{tournament.StartDate.ToString("d")} - {tournament.EndDate.ToString("d")}";
+                txtEventRounds.Text = tournament.Rounds.ToString();
             }
         }
     }
