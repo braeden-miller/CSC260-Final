@@ -314,14 +314,15 @@
             this.btnEditCourse.TabIndex = 6;
             this.btnEditCourse.Text = "Edit Course Information";
             this.btnEditCourse.UseVisualStyleBackColor = true;
+            this.btnEditCourse.Click += new System.EventHandler(this.btnEditCourse_Click);
             // 
             // txtCoursePar
             // 
-            this.txtCoursePar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCoursePar.Location = new System.Drawing.Point(163, 117);
+            this.txtCoursePar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCoursePar.Location = new System.Drawing.Point(163, 123);
             this.txtCoursePar.Name = "txtCoursePar";
             this.txtCoursePar.ReadOnly = true;
-            this.txtCoursePar.Size = new System.Drawing.Size(48, 38);
+            this.txtCoursePar.Size = new System.Drawing.Size(48, 30);
             this.txtCoursePar.TabIndex = 5;
             this.txtCoursePar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

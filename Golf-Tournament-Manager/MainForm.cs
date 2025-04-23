@@ -13,6 +13,7 @@ namespace Golf_Tournament_Manager
     public partial class frmMain : Form
     {
         private Tournament tournament = new Tournament();
+        private Course course = new Course();
         public frmMain()
         {
             InitializeComponent();
@@ -30,6 +31,19 @@ namespace Golf_Tournament_Manager
                 txtEventName.Text = tournament.Name;
                 txtEventDate.Text = $"{tournament.StartDate.ToString("d")} - {tournament.EndDate.ToString("d")}";
                 txtEventRounds.Text = tournament.Rounds.ToString();
+            }
+        }
+
+        private void btnEditCourse_Click(object sender, EventArgs e)
+        {
+            var courseForm = new frmEditCourse(course);
+            if (courseForm.ShowDialog() == DialogResult.OK)
+            {
+                txtCourseName.Text = course.Name;
+                txtCourseLocation.Text = course.Location;
+                txtTeesPlayed.Text = course.TeesPlayed;
+                txtCourseRating.Text = $"{course.CourseRating.ToString("0.0")}/{course.SlopeRating.ToString()}";
+                txtCoursePar.Text = course.TotalPar.ToString();
             }
         }
     }

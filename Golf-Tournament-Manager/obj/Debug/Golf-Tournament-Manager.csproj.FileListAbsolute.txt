@@ -9,3 +9,4 @@ C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Orien
 C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.exe
 C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.pdb
 C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEditTournament.resources
+C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEditCourse.resources
