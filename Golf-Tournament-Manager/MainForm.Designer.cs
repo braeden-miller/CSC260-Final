@@ -57,6 +57,9 @@
             this.txtCourseName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddGolfer = new System.Windows.Forms.Button();
+            this.cmbGolferList = new System.Windows.Forms.ComboBox();
+            this.btnEditGolfer = new System.Windows.Forms.Button();
+            this.btnDeleteGolfer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblLeaderboard)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -381,11 +384,50 @@
             this.btnAddGolfer.UseVisualStyleBackColor = true;
             this.btnAddGolfer.Click += new System.EventHandler(this.btnAddGolfer_Click);
             // 
+            // cmbGolferList
+            // 
+            this.cmbGolferList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGolferList.FormattingEnabled = true;
+            this.cmbGolferList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cmbGolferList.Location = new System.Drawing.Point(79, 478);
+            this.cmbGolferList.MaxDropDownItems = 100;
+            this.cmbGolferList.Name = "cmbGolferList";
+            this.cmbGolferList.Size = new System.Drawing.Size(170, 28);
+            this.cmbGolferList.Sorted = true;
+            this.cmbGolferList.TabIndex = 15;
+            // 
+            // btnEditGolfer
+            // 
+            this.btnEditGolfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditGolfer.Location = new System.Drawing.Point(291, 508);
+            this.btnEditGolfer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditGolfer.Name = "btnEditGolfer";
+            this.btnEditGolfer.Size = new System.Drawing.Size(171, 26);
+            this.btnEditGolfer.TabIndex = 16;
+            this.btnEditGolfer.Text = "Edit Golfer";
+            this.btnEditGolfer.UseVisualStyleBackColor = true;
+            this.btnEditGolfer.Click += new System.EventHandler(this.btnEditGolfer_Click);
+            // 
+            // btnDeleteGolfer
+            // 
+            this.btnDeleteGolfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteGolfer.Location = new System.Drawing.Point(291, 538);
+            this.btnDeleteGolfer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeleteGolfer.Name = "btnDeleteGolfer";
+            this.btnDeleteGolfer.Size = new System.Drawing.Size(171, 26);
+            this.btnDeleteGolfer.TabIndex = 17;
+            this.btnDeleteGolfer.Text = "Delete Golfer";
+            this.btnDeleteGolfer.UseVisualStyleBackColor = true;
+            this.btnDeleteGolfer.Click += new System.EventHandler(this.btnDeleteGolfer_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 742);
+            this.Controls.Add(this.btnDeleteGolfer);
+            this.Controls.Add(this.btnEditGolfer);
+            this.Controls.Add(this.cmbGolferList);
             this.Controls.Add(this.btnAddGolfer);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -435,6 +477,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn NetToPar;
         private System.Windows.Forms.Button btnAddGolfer;
+        private System.Windows.Forms.ComboBox cmbGolferList;
+        private System.Windows.Forms.Button btnEditGolfer;
+        private System.Windows.Forms.Button btnDeleteGolfer;
     }
 }
 

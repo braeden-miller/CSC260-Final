@@ -175,11 +175,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.Button btnAdd;
+        public System.Windows.Forms.TextBox txtFirstName;
+        public System.Windows.Forms.TextBox txtLastName;
+        public System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.NumericUpDown numHandicap;
+        public System.Windows.Forms.NumericUpDown numHandicap;
         private System.Windows.Forms.Label label4;
     }
 }

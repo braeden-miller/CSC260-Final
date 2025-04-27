@@ -52,6 +52,12 @@
     <Compile Include="AddGolferForm.Designer.cs">
       <DependentUpon>AddGolferForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmForm.Designer.cs">
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Course.cs" />
     <Compile Include="EditCourseForm.cs">
       <SubType>Form</SubType>
@@ -79,6 +85,9 @@
     <Compile Include="Tournament.cs" />
     <EmbeddedResource Include="AddGolferForm.resx">
       <DependentUpon>AddGolferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmForm.resx">
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditCourseForm.resx">
       <DependentUpon>EditCourseForm.cs</DependentUpon>

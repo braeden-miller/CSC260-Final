@@ -20,7 +20,7 @@ namespace Golf_Tournament_Manager
             InitializeComponent();
         }
 
-        private void LeaderboardRefresh()
+        private void MainFormRefresh()
         {
             tblLeaderboard.Rows.Clear();
             tblLeaderboard.Columns.Clear();
@@ -62,11 +62,16 @@ namespace Golf_Tournament_Manager
             }
 
             tblLeaderboard.Sort(tblLeaderboard.Columns["Score"], ListSortDirection.Ascending);
+
+            cmbGolferList.Items.Clear();
+            foreach (var golfer in golfers)
+                cmbGolferList.Items.Add(golfer.LastName + ", " + golfer.FirstName);
+                
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            LeaderboardRefresh();
+            MainFormRefresh();
         }
 
         private void btnEditTournament_Click(object sender, EventArgs e)
@@ -80,7 +85,7 @@ namespace Golf_Tournament_Manager
                 else
                     txtEventDate.Text = tournament.StartDate.ToString("d");
                     txtEventRounds.Text = tournament.Rounds.ToString();
-                LeaderboardRefresh();
+                MainFormRefresh();
             }
         }
 
@@ -94,17 +99,73 @@ namespace Golf_Tournament_Manager
                 txtTeesPlayed.Text = course.TeesPlayed;
                 txtCourseRating.Text = $"{course.CourseRating.ToString("0.0")}/{course.SlopeRating.ToString()}";
                 txtCoursePar.Text = course.TotalPar.ToString();
-                LeaderboardRefresh();
+                MainFormRefresh();
             }
         }
 
         private void btnAddGolfer_Click(object sender, EventArgs e)
         {
             var addGolferForm = new frmAddGolfer();
+            addGolferForm.Text = "Add Golfer";
+            addGolferForm.btnAdd.Text = "Add";
             if (addGolferForm.ShowDialog() == DialogResult.OK)
             {
                 golfers.Add(addGolferForm.NewGolfer);
-                LeaderboardRefresh();
+                MainFormRefresh();
+                cmbGolferList.SelectedItem = addGolferForm.NewGolfer.LastName + ", " + addGolferForm.NewGolfer.FirstName;
+            }
+        }
+
+        private void btnEditGolfer_Click(object sender, EventArgs e)
+        {
+            string selected = cmbGolferList.SelectedItem.ToString();
+            string last = selected.Substring(0, selected.IndexOf(','));
+            string first = selected.Substring(selected.IndexOf(",") + 2, selected.Length - (last.Length + 2));
+            foreach (var golfer in golfers)
+            {
+                if (first == golfer.FirstName.ToString() && last == golfer.LastName.ToString())
+                {
+                    Golfer selectedGolfer = golfer;
+                    var editForm = new frmAddGolfer();
+
+                    editForm.txtFirstName.Text = selectedGolfer.FirstName;
+                    editForm.txtLastName.Text = selectedGolfer.LastName;
+                    editForm.numHandicap.Text = selectedGolfer.HandicapIndex.ToString();
+                    editForm.Text = "Edit Golfer";
+                    editForm.btnAdd.Text = "Edit";
+
+                    if (editForm.ShowDialog() == DialogResult.OK)
+                    {
+                        selectedGolfer.FirstName = editForm.NewGolfer.FirstName;
+                        selectedGolfer.LastName = editForm.NewGolfer.LastName;
+                        selectedGolfer.HandicapIndex = editForm.NewGolfer.HandicapIndex;
+
+                        MainFormRefresh();
+                        cmbGolferList.SelectedItem = selectedGolfer.LastName + ", " + selectedGolfer.FirstName;
+                    }
+                }
+            }
+        }
+
+        private void btnDeleteGolfer_Click(object sender, EventArgs e)
+        {
+
+            string selected = cmbGolferList.SelectedItem.ToString();
+            string last = selected.Substring(0, selected.IndexOf(','));
+            string first = selected.Substring(selected.IndexOf(",") + 2, selected.Length - (last.Length + 2));
+
+            foreach (var golfer in golfers)
+            {
+                if (first == golfer.FirstName.ToString() && last == golfer.LastName.ToString())
+                {
+                    var confirmationForm = new frmConfirm();
+                    if (confirmationForm.ShowDialog() == DialogResult.OK)
+                    {
+                        golfers.Remove(golfer);
+                        MainFormRefresh();
+                        break;
+                    }
+                }
             }
         }
     }
