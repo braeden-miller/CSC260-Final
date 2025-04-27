@@ -43,12 +43,12 @@
             this.numSlopeRating = new System.Windows.Forms.NumericUpDown();
             this.numHolePar = new System.Windows.Forms.NumericUpDown();
             this.dataHolePars = new System.Windows.Forms.DataGridView();
+            this.Hole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Par = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTees = new System.Windows.Forms.TextBox();
-            this.Hole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Par = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numSlopeRating)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHolePar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataHolePars)).BeginInit();
@@ -58,9 +58,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(180, 21);
+            this.label1.Location = new System.Drawing.Point(135, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 25);
+            this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Course Name:";
             // 
@@ -68,9 +69,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(175, 153);
+            this.label2.Location = new System.Drawing.Point(131, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 25);
+            this.label2.Size = new System.Drawing.Size(129, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Course Rating:";
             // 
@@ -78,9 +80,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(230, 61);
+            this.label3.Location = new System.Drawing.Point(172, 50);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 25);
+            this.label3.Size = new System.Drawing.Size(83, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Location:";
             // 
@@ -88,9 +91,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(435, 153);
+            this.label4.Location = new System.Drawing.Point(326, 124);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 25);
+            this.label4.Size = new System.Drawing.Size(118, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Slope Rating:";
             // 
@@ -98,41 +102,46 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(229, 196);
+            this.label5.Location = new System.Drawing.Point(172, 159);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 25);
+            this.label5.Size = new System.Drawing.Size(83, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Hole Par:";
             // 
             // txtCourseName
             // 
             this.txtCourseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCourseName.Location = new System.Drawing.Point(337, 12);
+            this.txtCourseName.Location = new System.Drawing.Point(253, 10);
+            this.txtCourseName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(341, 38);
+            this.txtCourseName.Size = new System.Drawing.Size(257, 32);
             this.txtCourseName.TabIndex = 5;
             // 
             // txtCourseLocation
             // 
             this.txtCourseLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCourseLocation.Location = new System.Drawing.Point(337, 56);
+            this.txtCourseLocation.Location = new System.Drawing.Point(253, 46);
+            this.txtCourseLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCourseLocation.Name = "txtCourseLocation";
-            this.txtCourseLocation.Size = new System.Drawing.Size(341, 38);
+            this.txtCourseLocation.Size = new System.Drawing.Size(257, 32);
             this.txtCourseLocation.TabIndex = 6;
             // 
             // txtCourseRating
             // 
             this.txtCourseRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCourseRating.Location = new System.Drawing.Point(337, 144);
+            this.txtCourseRating.Location = new System.Drawing.Point(253, 117);
+            this.txtCourseRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCourseRating.Name = "txtCourseRating";
-            this.txtCourseRating.Size = new System.Drawing.Size(92, 38);
+            this.txtCourseRating.Size = new System.Drawing.Size(70, 32);
             this.txtCourseRating.TabIndex = 7;
             this.txtCourseRating.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numSlopeRating
             // 
             this.numSlopeRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numSlopeRating.Location = new System.Drawing.Point(583, 145);
+            this.numSlopeRating.Location = new System.Drawing.Point(437, 118);
+            this.numSlopeRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numSlopeRating.Maximum = new decimal(new int[] {
             200,
             0,
@@ -144,7 +153,7 @@
             0,
             0});
             this.numSlopeRating.Name = "numSlopeRating";
-            this.numSlopeRating.Size = new System.Drawing.Size(92, 38);
+            this.numSlopeRating.Size = new System.Drawing.Size(69, 32);
             this.numSlopeRating.TabIndex = 8;
             this.numSlopeRating.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numSlopeRating.Value = new decimal(new int[] {
@@ -156,7 +165,8 @@
             // numHolePar
             // 
             this.numHolePar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numHolePar.Location = new System.Drawing.Point(337, 188);
+            this.numHolePar.Location = new System.Drawing.Point(253, 153);
+            this.numHolePar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numHolePar.Maximum = new decimal(new int[] {
             9,
             0,
@@ -168,7 +178,7 @@
             0,
             0});
             this.numHolePar.Name = "numHolePar";
-            this.numHolePar.Size = new System.Drawing.Size(92, 38);
+            this.numHolePar.Size = new System.Drawing.Size(69, 32);
             this.numHolePar.TabIndex = 9;
             this.numHolePar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numHolePar.Value = new decimal(new int[] {
@@ -196,7 +206,8 @@
             this.dataHolePars.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Hole,
             this.Par});
-            this.dataHolePars.Location = new System.Drawing.Point(12, 12);
+            this.dataHolePars.Location = new System.Drawing.Point(9, 10);
+            this.dataHolePars.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataHolePars.MultiSelect = false;
             this.dataHolePars.Name = "dataHolePars";
             this.dataHolePars.ReadOnly = true;
@@ -205,50 +216,9 @@
             this.dataHolePars.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataHolePars.RowTemplate.Height = 24;
             this.dataHolePars.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataHolePars.Size = new System.Drawing.Size(135, 296);
+            this.dataHolePars.Size = new System.Drawing.Size(101, 240);
             this.dataHolePars.TabIndex = 10;
             this.dataHolePars.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHolePars_CellClick);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(581, 271);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(97, 37);
-            this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(446, 271);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(97, 37);
-            this.btnCancel.TabIndex = 12;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(263, 109);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 25);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Tees:";
-            // 
-            // txtTees
-            // 
-            this.txtTees.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTees.Location = new System.Drawing.Point(337, 100);
-            this.txtTees.Name = "txtTees";
-            this.txtTees.Size = new System.Drawing.Size(146, 38);
-            this.txtTees.TabIndex = 14;
-            this.txtTees.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Hole
             // 
@@ -271,13 +241,58 @@
             this.Par.Name = "Par";
             this.Par.ReadOnly = true;
             // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(436, 220);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(73, 30);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(334, 220);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(73, 30);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(197, 89);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 20);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Tees:";
+            // 
+            // txtTees
+            // 
+            this.txtTees.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTees.Location = new System.Drawing.Point(253, 81);
+            this.txtTees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTees.Name = "txtTees";
+            this.txtTees.Size = new System.Drawing.Size(110, 32);
+            this.txtTees.TabIndex = 14;
+            this.txtTees.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmEditCourse
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(690, 320);
+            this.ClientSize = new System.Drawing.Size(518, 260);
             this.Controls.Add(this.txtTees);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCancel);
@@ -295,6 +310,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEditCourse";

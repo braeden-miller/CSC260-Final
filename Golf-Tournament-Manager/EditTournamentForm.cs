@@ -40,8 +40,13 @@ namespace Golf_Tournament_Manager
                 dateEnd.Value = _tournament.EndDate;
                 dateEnd.Checked = true;
             }
-            
-            numRounds.Text = _tournament.Rounds.ToString();
+
+            if (tournament.Handicapped)
+                chkHandicapp.Checked = true;
+            else
+                chkHandicapp.Checked = false;
+
+                numRounds.Text = _tournament.Rounds.ToString();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -55,6 +60,7 @@ namespace Golf_Tournament_Manager
             _tournament.StartDate = dateStart.Value;
             _tournament.EndDate = dateEnd.Value;
             _tournament.Rounds = Convert.ToInt32(numRounds.Value);
+            _tournament.Handicapped = chkHandicapp.Checked;
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

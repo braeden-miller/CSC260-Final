@@ -10,3 +10,16 @@ C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Orien
 C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.pdb
 C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEditTournament.resources
 C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEditCourse.resources
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\bin\Debug\Golf-Tournament-Manager.exe.config
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\bin\Debug\Golf-Tournament-Manager.exe
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\bin\Debug\Golf-Tournament-Manager.pdb
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.csproj.AssemblyReference.cache
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEditCourse.resources
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEditTournament.resources
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmMain.resources
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.Properties.Resources.resources
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.csproj.GenerateResource.cache
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.csproj.CoreCompileInputs.cache
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.exe
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf-Tournament-Manager.pdb
+C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmAddGolfer.resources

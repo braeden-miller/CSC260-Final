@@ -38,6 +38,7 @@ namespace Golf_Tournament_Manager
             {
                 dataHolePars.Rows.Add(hole.Number, hole.Par);
             }
+            numHolePar.Value = _course.Holes[1].Par;
 
             dataHolePars.CellClick += dataHolePars_CellClick;
         }
