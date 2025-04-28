@@ -33,6 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tblLeaderboard = new System.Windows.Forms.DataGridView();
+            this.Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NetToPar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEditTournament = new System.Windows.Forms.Button();
             this.txtEventRounds = new System.Windows.Forms.TextBox();
@@ -57,9 +60,7 @@
             this.cmbGolferList = new System.Windows.Forms.ComboBox();
             this.btnEditGolfer = new System.Windows.Forms.Button();
             this.btnDeleteGolfer = new System.Windows.Forms.Button();
-            this.Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NetToPar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCreateScorecard = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblLeaderboard)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -103,6 +104,38 @@
             this.tblLeaderboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tblLeaderboard.Size = new System.Drawing.Size(304, 600);
             this.tblLeaderboard.TabIndex = 0;
+            // 
+            // Place
+            // 
+            this.Place.FillWeight = 75F;
+            this.Place.HeaderText = "Place";
+            this.Place.MinimumWidth = 6;
+            this.Place.Name = "Place";
+            this.Place.ReadOnly = true;
+            this.Place.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Place.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PlayerName
+            // 
+            this.PlayerName.FillWeight = 200F;
+            this.PlayerName.HeaderText = "Player";
+            this.PlayerName.MinimumWidth = 6;
+            this.PlayerName.Name = "PlayerName";
+            this.PlayerName.ReadOnly = true;
+            this.PlayerName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.PlayerName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // NetToPar
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.NetToPar.DefaultCellStyle = dataGridViewCellStyle2;
+            this.NetToPar.FillWeight = 75F;
+            this.NetToPar.HeaderText = "Net +/-";
+            this.NetToPar.MinimumWidth = 6;
+            this.NetToPar.Name = "NetToPar";
+            this.NetToPar.ReadOnly = true;
+            this.NetToPar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NetToPar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // groupBox1
             // 
@@ -392,43 +425,24 @@
             this.btnDeleteGolfer.UseVisualStyleBackColor = true;
             this.btnDeleteGolfer.Click += new System.EventHandler(this.btnDeleteGolfer_Click);
             // 
-            // Place
+            // btnCreateScorecard
             // 
-            this.Place.FillWeight = 75F;
-            this.Place.HeaderText = "Place";
-            this.Place.MinimumWidth = 6;
-            this.Place.Name = "Place";
-            this.Place.ReadOnly = true;
-            this.Place.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Place.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PlayerName
-            // 
-            this.PlayerName.FillWeight = 200F;
-            this.PlayerName.HeaderText = "Player";
-            this.PlayerName.MinimumWidth = 6;
-            this.PlayerName.Name = "PlayerName";
-            this.PlayerName.ReadOnly = true;
-            this.PlayerName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.PlayerName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // NetToPar
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.NetToPar.DefaultCellStyle = dataGridViewCellStyle2;
-            this.NetToPar.FillWeight = 75F;
-            this.NetToPar.HeaderText = "Net +/-";
-            this.NetToPar.MinimumWidth = 6;
-            this.NetToPar.Name = "NetToPar";
-            this.NetToPar.ReadOnly = true;
-            this.NetToPar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.NetToPar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.btnCreateScorecard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateScorecard.Location = new System.Drawing.Point(79, 538);
+            this.btnCreateScorecard.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCreateScorecard.Name = "btnCreateScorecard";
+            this.btnCreateScorecard.Size = new System.Drawing.Size(171, 26);
+            this.btnCreateScorecard.TabIndex = 18;
+            this.btnCreateScorecard.Text = "Create Scorecard";
+            this.btnCreateScorecard.UseVisualStyleBackColor = true;
+            this.btnCreateScorecard.Click += new System.EventHandler(this.btnCreateScorecard_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 742);
+            this.Controls.Add(this.btnCreateScorecard);
             this.Controls.Add(this.btnDeleteGolfer);
             this.Controls.Add(this.btnEditGolfer);
             this.Controls.Add(this.cmbGolferList);
@@ -484,6 +498,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Place;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn NetToPar;
+        private System.Windows.Forms.Button btnCreateScorecard;
     }
 }
 

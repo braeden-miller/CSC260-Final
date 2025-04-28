@@ -12,10 +12,9 @@ namespace Golf_Tournament_Manager
         public Golfer Golfer { get; set; }
 
         public List<int> HoleScores { get; set; } = new List<int>(new int[18]);
-        public int GrossScore => HoleScores.Sum();
-        public int CourseHandicap => (int)Math.Round(Golfer.HandicapIndex * Course.SlopeRating / 113.0);
-        public int NetScore => GrossScore - CourseHandicap;
-        public int NetToPar => NetScore - Course.Holes.Sum(h => h.Par);
-        public int GrossToPar => GrossScore - Course.Holes.Sum(h => h.Par);
+        public int GrossScore { get; set; }
+        public int NetScore { get; set; }
+        public int NetToPar { get; set; }
+        public int GrossToPar { get; set; }
     }
 }

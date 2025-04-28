@@ -80,8 +80,6 @@ namespace Golf_Tournament_Manager
                 _course.Holes[i].Par = holePar;
             }
 
-            _course.TotalPar = totalPar;
-
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

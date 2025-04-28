@@ -13,7 +13,7 @@ namespace Golf_Tournament_Manager
         public string TeesPlayed { get; set; }
         public double CourseRating { get; set; }
         public int SlopeRating { get; set; }
-        public int TotalPar { get; set; }
+        public int TotalPar => Holes.Sum(h => h.Par);
 
         public List<Hole> Holes { get; set; } = Enumerable.Range(1, 18)
             .Select(i => new Hole { Number = i, Par = 4 })

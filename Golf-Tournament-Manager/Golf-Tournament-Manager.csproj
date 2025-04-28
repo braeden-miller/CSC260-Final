@@ -71,6 +71,12 @@
     <Compile Include="EditTournamentForm.Designer.cs">
       <DependentUpon>EditTournamentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnterScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterScoreForm.Designer.cs">
+      <DependentUpon>EnterScoreForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Golfer.cs" />
     <Compile Include="Hole.cs" />
     <Compile Include="MainForm.cs">
@@ -94,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditTournamentForm.resx">
       <DependentUpon>EditTournamentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterScoreForm.resx">
+      <DependentUpon>EnterScoreForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

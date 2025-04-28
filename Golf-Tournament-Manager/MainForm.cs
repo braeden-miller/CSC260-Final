@@ -78,8 +78,6 @@ namespace Golf_Tournament_Manager
             tblLeaderboard.Columns["Score"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             tblLeaderboard.Columns["Score"].SortMode = DataGridViewColumnSortMode.NotSortable;
 
-            tblLeaderboard.Sort(tblLeaderboard.Columns["Score"], ListSortDirection.Ascending);
-
             cmbGolferList.Items.Clear();
             foreach (var golfer in golfers)
                 cmbGolferList.Items.Add(golfer.LastName + ", " + golfer.FirstName);
@@ -88,14 +86,31 @@ namespace Golf_Tournament_Manager
                 btnEditGolfer.Enabled = false;
                 btnDeleteGolfer.Enabled = false;
                 cmbGolferList.Enabled = false;
+                btnCreateScorecard.Enabled = false;
             }
             else
             {
                 btnEditGolfer.Enabled = true;
                 btnDeleteGolfer.Enabled = true;
                 cmbGolferList.Enabled = true;
+                btnCreateScorecard.Enabled = true;
+                cmbGolferList.SelectedIndex = 0;
             }
-                
+        }
+
+        private Golfer GetGolfer()
+        {
+            string selected = cmbGolferList.SelectedItem.ToString();
+            string last = selected.Substring(0, selected.IndexOf(','));
+            string first = selected.Substring(selected.IndexOf(",") + 2, selected.Length - (last.Length + 2));
+            foreach (var golfer in golfers)
+            {
+                if (first == golfer.FirstName.ToString() && last == golfer.LastName.ToString())
+                {
+                    return golfer;
+                }
+            }
+            return null;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -147,57 +162,46 @@ namespace Golf_Tournament_Manager
 
         private void btnEditGolfer_Click(object sender, EventArgs e)
         {
-            string selected = cmbGolferList.SelectedItem.ToString();
-            string last = selected.Substring(0, selected.IndexOf(','));
-            string first = selected.Substring(selected.IndexOf(",") + 2, selected.Length - (last.Length + 2));
-            foreach (var golfer in golfers)
+            Golfer selectedGolfer = GetGolfer();
+            var editForm = new frmAddGolfer();
+
+            editForm.txtFirstName.Text = selectedGolfer.FirstName;
+            editForm.txtLastName.Text = selectedGolfer.LastName;
+            editForm.numHandicap.Text = selectedGolfer.HandicapIndex.ToString();
+            editForm.Text = "Edit Golfer";
+            editForm.btnAdd.Text = "Edit";
+
+            if (editForm.ShowDialog() == DialogResult.OK)
             {
-                if (first == golfer.FirstName.ToString() && last == golfer.LastName.ToString())
-                {
-                    Golfer selectedGolfer = golfer;
-                    var editForm = new frmAddGolfer();
+                selectedGolfer.FirstName = editForm.NewGolfer.FirstName;
+                selectedGolfer.LastName = editForm.NewGolfer.LastName;
+                selectedGolfer.HandicapIndex = editForm.NewGolfer.HandicapIndex;
 
-                    editForm.txtFirstName.Text = selectedGolfer.FirstName;
-                    editForm.txtLastName.Text = selectedGolfer.LastName;
-                    editForm.numHandicap.Text = selectedGolfer.HandicapIndex.ToString();
-                    editForm.Text = "Edit Golfer";
-                    editForm.btnAdd.Text = "Edit";
-
-                    if (editForm.ShowDialog() == DialogResult.OK)
-                    {
-                        selectedGolfer.FirstName = editForm.NewGolfer.FirstName;
-                        selectedGolfer.LastName = editForm.NewGolfer.LastName;
-                        selectedGolfer.HandicapIndex = editForm.NewGolfer.HandicapIndex;
-
-                        MainFormRefresh();
-                        cmbGolferList.SelectedItem = selectedGolfer.LastName + ", " + selectedGolfer.FirstName;
-                    }
-                }
+                MainFormRefresh();
+                cmbGolferList.SelectedItem = selectedGolfer.LastName + ", " + selectedGolfer.FirstName;
             }
         }
 
         private void btnDeleteGolfer_Click(object sender, EventArgs e)
         {
 
-            string selected = cmbGolferList.SelectedItem.ToString();
-            string last = selected.Substring(0, selected.IndexOf(','));
-            string first = selected.Substring(selected.IndexOf(",") + 2, selected.Length - (last.Length + 2));
-
-            foreach (var golfer in golfers)
+            Golfer golfer = GetGolfer();
+            var confirmationForm = new frmConfirm();
+            if (confirmationForm.ShowDialog() == DialogResult.OK)
             {
-                if (first == golfer.FirstName.ToString() && last == golfer.LastName.ToString())
-                {
-                    var confirmationForm = new frmConfirm();
-                    if (confirmationForm.ShowDialog() == DialogResult.OK)
-                    {
-                        golfers.Remove(golfer);
-                        MainFormRefresh();
-                        break;
-                    }
-                }
+                golfers.Remove(golfer);
+                MainFormRefresh();
             }
             if (cmbGolferList.Items.Count > 0)
                 cmbGolferList.SelectedIndex = 0;
+        }
+
+        private void btnCreateScorecard_Click(object sender, EventArgs e)
+        {
+            Golfer selectedGolfer = GetGolfer();
+            frmEnterScore enterScoreForm = new frmEnterScore(selectedGolfer, course, tournament);
+            enterScoreForm.ShowDialog();
+            MainFormRefresh();
         }
     }
 }
