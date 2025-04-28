@@ -29,8 +29,8 @@ namespace Golf_Tournament_Manager
                 txtCourseRating.Text = "72.0";
             else
                 txtCourseRating.Text = _course.CourseRating.ToString("0.0");
-            if (_course.CourseRating == 0)
-                numSlopeRating.Value = 120;
+            if (_course.SlopeRating == 0)
+                numSlopeRating.Value = 90;
             else
                 numSlopeRating.Value = _course.SlopeRating;
 

@@ -60,12 +60,41 @@ namespace Golf_Tournament_Manager
                         tblLeaderboard.Rows.Add(i + 1, formattedName, sortedGolfers[i].GrossScoreToPar);
                 }
             }
+            foreach (DataGridViewRow row in tblLeaderboard.Rows)
+            {
+                var score = row.Cells["Score"];
+                if ((int)score.Value == 0)
+                    score.Value = "E";
+                else if ((int)score.Value > 0)
+                    score.Value = "+" + score.Value;
+            }
+
+            tblLeaderboard.Columns["Place"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            tblLeaderboard.Columns["Place"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            tblLeaderboard.Columns["Place"].SortMode = DataGridViewColumnSortMode.NotSortable;
+            tblLeaderboard.Columns["Name"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            tblLeaderboard.Columns["Name"].SortMode = DataGridViewColumnSortMode.NotSortable;
+            tblLeaderboard.Columns["Score"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            tblLeaderboard.Columns["Score"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            tblLeaderboard.Columns["Score"].SortMode = DataGridViewColumnSortMode.NotSortable;
 
             tblLeaderboard.Sort(tblLeaderboard.Columns["Score"], ListSortDirection.Ascending);
 
             cmbGolferList.Items.Clear();
             foreach (var golfer in golfers)
                 cmbGolferList.Items.Add(golfer.LastName + ", " + golfer.FirstName);
+            if (cmbGolferList.Items.Count == 0)
+            {
+                btnEditGolfer.Enabled = false;
+                btnDeleteGolfer.Enabled = false;
+                cmbGolferList.Enabled = false;
+            }
+            else
+            {
+                btnEditGolfer.Enabled = true;
+                btnDeleteGolfer.Enabled = true;
+                cmbGolferList.Enabled = true;
+            }
                 
         }
 
@@ -97,7 +126,7 @@ namespace Golf_Tournament_Manager
                 txtCourseName.Text = course.Name;
                 txtCourseLocation.Text = course.Location;
                 txtTeesPlayed.Text = course.TeesPlayed;
-                txtCourseRating.Text = $"{course.CourseRating.ToString("0.0")}/{course.SlopeRating.ToString()}";
+                txtCourseRating.Text = $"{course.CourseRating.ToString("0.0")} / {course.SlopeRating.ToString()}";
                 txtCoursePar.Text = course.TotalPar.ToString();
                 MainFormRefresh();
             }
@@ -167,6 +196,8 @@ namespace Golf_Tournament_Manager
                     }
                 }
             }
+            if (cmbGolferList.Items.Count > 0)
+                cmbGolferList.SelectedIndex = 0;
         }
     }
 }

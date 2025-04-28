@@ -33,9 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tblLeaderboard = new System.Windows.Forms.DataGridView();
-            this.Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NetToPar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEditTournament = new System.Windows.Forms.Button();
             this.txtEventRounds = new System.Windows.Forms.TextBox();
@@ -60,6 +57,9 @@
             this.cmbGolferList = new System.Windows.Forms.ComboBox();
             this.btnEditGolfer = new System.Windows.Forms.Button();
             this.btnDeleteGolfer = new System.Windows.Forms.Button();
+            this.Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NetToPar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tblLeaderboard)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -103,35 +103,6 @@
             this.tblLeaderboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tblLeaderboard.Size = new System.Drawing.Size(304, 600);
             this.tblLeaderboard.TabIndex = 0;
-            // 
-            // Place
-            // 
-            this.Place.FillWeight = 75F;
-            this.Place.HeaderText = "Place";
-            this.Place.MinimumWidth = 6;
-            this.Place.Name = "Place";
-            this.Place.ReadOnly = true;
-            this.Place.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // PlayerName
-            // 
-            this.PlayerName.FillWeight = 200F;
-            this.PlayerName.HeaderText = "Player";
-            this.PlayerName.MinimumWidth = 6;
-            this.PlayerName.Name = "PlayerName";
-            this.PlayerName.ReadOnly = true;
-            this.PlayerName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // NetToPar
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.NetToPar.DefaultCellStyle = dataGridViewCellStyle2;
-            this.NetToPar.FillWeight = 75F;
-            this.NetToPar.HeaderText = "Net +/-";
-            this.NetToPar.MinimumWidth = 6;
-            this.NetToPar.Name = "NetToPar";
-            this.NetToPar.ReadOnly = true;
-            this.NetToPar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // groupBox1
             // 
@@ -386,6 +357,7 @@
             // 
             // cmbGolferList
             // 
+            this.cmbGolferList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGolferList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGolferList.FormattingEnabled = true;
             this.cmbGolferList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -419,6 +391,38 @@
             this.btnDeleteGolfer.Text = "Delete Golfer";
             this.btnDeleteGolfer.UseVisualStyleBackColor = true;
             this.btnDeleteGolfer.Click += new System.EventHandler(this.btnDeleteGolfer_Click);
+            // 
+            // Place
+            // 
+            this.Place.FillWeight = 75F;
+            this.Place.HeaderText = "Place";
+            this.Place.MinimumWidth = 6;
+            this.Place.Name = "Place";
+            this.Place.ReadOnly = true;
+            this.Place.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Place.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PlayerName
+            // 
+            this.PlayerName.FillWeight = 200F;
+            this.PlayerName.HeaderText = "Player";
+            this.PlayerName.MinimumWidth = 6;
+            this.PlayerName.Name = "PlayerName";
+            this.PlayerName.ReadOnly = true;
+            this.PlayerName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.PlayerName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // NetToPar
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.NetToPar.DefaultCellStyle = dataGridViewCellStyle2;
+            this.NetToPar.FillWeight = 75F;
+            this.NetToPar.HeaderText = "Net +/-";
+            this.NetToPar.MinimumWidth = 6;
+            this.NetToPar.Name = "NetToPar";
+            this.NetToPar.ReadOnly = true;
+            this.NetToPar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NetToPar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // frmMain
             // 
@@ -473,13 +477,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCourseRating;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Place;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NetToPar;
         private System.Windows.Forms.Button btnAddGolfer;
         private System.Windows.Forms.ComboBox cmbGolferList;
         private System.Windows.Forms.Button btnEditGolfer;
         private System.Windows.Forms.Button btnDeleteGolfer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Place;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NetToPar;
     }
 }
 
