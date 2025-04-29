@@ -16,6 +16,8 @@ namespace Golf_Tournament_Manager
         private Course _course;
         private Tournament _tournament;
         private Round currentRound;
+        private int _roundNum;
+        private bool editMode = false;
 
         public frmEnterScore(Golfer golfer, Course course, Tournament tournament)
         {
@@ -24,11 +26,23 @@ namespace Golf_Tournament_Manager
             _course = course;
             _tournament = tournament;
             currentRound = new Round();
-
+            currentRound.HoleScores = new List<int>(new int[18]);
             for (int i = 0; i < 18; i++)
             {
                 currentRound.HoleScores[i] = _course.Holes[i].Par;
             }
+            InitializeForm();
+        }
+
+        public frmEnterScore(Golfer golfer, Course course, Tournament tournament, int roundNum)
+        {
+            InitializeComponent();
+            _golfer = golfer;
+            _course = course;
+            _tournament = tournament;
+            _roundNum = roundNum;
+            currentRound = _golfer.Rounds[_roundNum];
+            editMode = true;
             InitializeForm();
         }
 
@@ -46,6 +60,10 @@ namespace Golf_Tournament_Manager
             {
                 tblHoleScores.Rows.Add(i + 1, _course.Holes[i].Par, currentRound.HoleScores[i]);
             }
+            tblHoleScores.Rows[0].Selected = true;
+            tblHoleScores.CurrentCell = tblHoleScores.Rows[0].Cells["HoleScore"];
+            numHoleScore.Value = Convert.ToInt32(tblHoleScores.Rows[0].Cells["HoleScore"].Value);
+
             UpdateForm();
         }
 
@@ -95,6 +113,8 @@ namespace Golf_Tournament_Manager
             Round round = new Round();
             int gross = 0;
 
+            round.HoleScores.Clear();
+
             for (int i = 0; i < 18; i++)
             {
                 int score = Convert.ToInt32(tblHoleScores.Rows[i].Cells["HoleScore"].Value);
@@ -119,7 +139,6 @@ namespace Golf_Tournament_Manager
 
             return round;
         }
-
 
         private void frmEnterScore_Load(object sender, EventArgs e)
         {
@@ -147,7 +166,11 @@ namespace Golf_Tournament_Manager
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
-            _golfer.Rounds.Add(GetRound());
+            
+            if (!editMode)
+                _golfer.Rounds.Add(GetRound());
+            else
+                _golfer.Rounds[_roundNum] = GetRound();
             this.Close();
         }
     }

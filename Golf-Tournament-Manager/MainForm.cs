@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -87,6 +88,9 @@ namespace Golf_Tournament_Manager
                 btnDeleteGolfer.Enabled = false;
                 cmbGolferList.Enabled = false;
                 btnCreateScorecard.Enabled = false;
+                cmbRoundList.Enabled = false;
+                btnEditScorecard.Enabled = false;
+                btnDeleteScorecard.Enabled = false;
             }
             else
             {
@@ -202,6 +206,61 @@ namespace Golf_Tournament_Manager
             frmEnterScore enterScoreForm = new frmEnterScore(selectedGolfer, course, tournament);
             enterScoreForm.ShowDialog();
             MainFormRefresh();
+        }
+
+        private void cmbGolferList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Set up round selection combo box and enable/disable controls as needed
+            cmbRoundList.Items.Clear();
+            Golfer selectedGolfer = GetGolfer();
+            for (int i = 0; i < selectedGolfer.Rounds.Count; i++)
+            {
+                if (tournament.Handicapped)
+                    cmbRoundList.Items.Add($"Round {i+1} ({selectedGolfer.Rounds[i].NetScore})");
+                else
+                    cmbRoundList.Items.Add($"Round {i + 1} ({selectedGolfer.Rounds[i].GrossScore})");
+            }
+            if (selectedGolfer.Rounds.Count > 0)
+            {
+                if (selectedGolfer.Rounds.Count < tournament.Rounds)
+                    btnCreateScorecard.Enabled = true;
+                else
+                    btnCreateScorecard.Enabled = false;
+                cmbRoundList.SelectedIndex = 0;
+                cmbRoundList.Enabled = true;
+                btnEditScorecard.Enabled = true;
+                btnDeleteScorecard.Enabled = true;
+            }
+            else
+            {
+                cmbRoundList.Enabled = false;
+                btnEditScorecard.Enabled = false;
+                btnDeleteScorecard.Enabled = false;
+            }
+
+            
+        }
+
+        private void btnEditScorecard_Click(object sender, EventArgs e)
+        {
+            int roundNumber = cmbRoundList.SelectedIndex;
+            Golfer selectedGolfer = GetGolfer();
+            frmEnterScore enterScoreForm = new frmEnterScore(selectedGolfer, course, tournament, roundNumber);
+            enterScoreForm.ShowDialog();
+            MainFormRefresh();
+        }
+
+        private void btnDeleteScorecard_Click(object sender, EventArgs e)
+        {
+            Golfer selectedGolfer = GetGolfer();
+            Round round = selectedGolfer.Rounds[cmbRoundList.SelectedIndex];
+            frmConfirm confirmScorecardDelete = new frmConfirm();
+            if (confirmScorecardDelete.ShowDialog() == DialogResult.OK)
+            {
+                selectedGolfer.Rounds.Remove(round);
+                cmbGolferList_SelectedIndexChanged(sender, e);
+                MainFormRefresh();
+            }
         }
     }
 }

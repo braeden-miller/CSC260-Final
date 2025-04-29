@@ -25,3 +25,6 @@ C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented 
 C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmAddGolfer.resources
 C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmConfirm.resources
 C:\Users\DSU\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEnterScore.resources
+C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmAddGolfer.resources
+C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmConfirm.resources
+C:\Users\Braeden\OneDrive - Dakota State University\8 - Spring 2025\Object Oriented Design\Final\CSC260-Final\Golf-Tournament-Manager\obj\Debug\Golf_Tournament_Manager.frmEnterScore.resources
