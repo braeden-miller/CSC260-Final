@@ -64,9 +64,13 @@
             this.cmbRoundList = new System.Windows.Forms.ComboBox();
             this.btnEditScorecard = new System.Windows.Forms.Button();
             this.btnDeleteScorecard = new System.Windows.Forms.Button();
+            this.btnPlayerStats = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblLeaderboard)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblLeaderboard
@@ -97,7 +101,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.tblLeaderboard.DefaultCellStyle = dataGridViewCellStyle3;
-            this.tblLeaderboard.Location = new System.Drawing.Point(639, 12);
+            this.tblLeaderboard.Location = new System.Drawing.Point(639, 70);
             this.tblLeaderboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tblLeaderboard.Name = "tblLeaderboard";
             this.tblLeaderboard.ReadOnly = true;
@@ -105,7 +109,7 @@
             this.tblLeaderboard.RowHeadersWidth = 51;
             this.tblLeaderboard.RowTemplate.Height = 24;
             this.tblLeaderboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblLeaderboard.Size = new System.Drawing.Size(405, 738);
+            this.tblLeaderboard.Size = new System.Drawing.Size(405, 632);
             this.tblLeaderboard.TabIndex = 0;
             // 
             // Place
@@ -247,7 +251,7 @@
             this.groupBox2.Controls.Add(this.txtCourseName);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 281);
+            this.groupBox2.Location = new System.Drawing.Point(12, 271);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -374,7 +378,7 @@
             // btnAddGolfer
             // 
             this.btnAddGolfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddGolfer.Location = new System.Drawing.Point(388, 588);
+            this.btnAddGolfer.Location = new System.Drawing.Point(321, 88);
             this.btnAddGolfer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddGolfer.Name = "btnAddGolfer";
             this.btnAddGolfer.Size = new System.Drawing.Size(228, 32);
@@ -389,8 +393,8 @@
             this.cmbGolferList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGolferList.FormattingEnabled = true;
             this.cmbGolferList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmbGolferList.Location = new System.Drawing.Point(105, 588);
-            this.cmbGolferList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbGolferList.Location = new System.Drawing.Point(321, 49);
+            this.cmbGolferList.Margin = new System.Windows.Forms.Padding(4);
             this.cmbGolferList.MaxDropDownItems = 100;
             this.cmbGolferList.Name = "cmbGolferList";
             this.cmbGolferList.Size = new System.Drawing.Size(225, 33);
@@ -401,7 +405,7 @@
             // btnEditGolfer
             // 
             this.btnEditGolfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditGolfer.Location = new System.Drawing.Point(388, 625);
+            this.btnEditGolfer.Location = new System.Drawing.Point(321, 125);
             this.btnEditGolfer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditGolfer.Name = "btnEditGolfer";
             this.btnEditGolfer.Size = new System.Drawing.Size(228, 32);
@@ -413,7 +417,7 @@
             // btnDeleteGolfer
             // 
             this.btnDeleteGolfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteGolfer.Location = new System.Drawing.Point(388, 662);
+            this.btnDeleteGolfer.Location = new System.Drawing.Point(321, 162);
             this.btnDeleteGolfer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteGolfer.Name = "btnDeleteGolfer";
             this.btnDeleteGolfer.Size = new System.Drawing.Size(228, 32);
@@ -425,7 +429,7 @@
             // btnCreateScorecard
             // 
             this.btnCreateScorecard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateScorecard.Location = new System.Drawing.Point(105, 662);
+            this.btnCreateScorecard.Location = new System.Drawing.Point(57, 88);
             this.btnCreateScorecard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCreateScorecard.Name = "btnCreateScorecard";
             this.btnCreateScorecard.Size = new System.Drawing.Size(228, 32);
@@ -440,7 +444,7 @@
             this.cmbRoundList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRoundList.FormattingEnabled = true;
             this.cmbRoundList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmbRoundList.Location = new System.Drawing.Point(108, 728);
+            this.cmbRoundList.Location = new System.Drawing.Point(60, 49);
             this.cmbRoundList.Margin = new System.Windows.Forms.Padding(4);
             this.cmbRoundList.MaxDropDownItems = 100;
             this.cmbRoundList.Name = "cmbRoundList";
@@ -451,7 +455,7 @@
             // btnEditScorecard
             // 
             this.btnEditScorecard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditScorecard.Location = new System.Drawing.Point(105, 780);
+            this.btnEditScorecard.Location = new System.Drawing.Point(57, 125);
             this.btnEditScorecard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditScorecard.Name = "btnEditScorecard";
             this.btnEditScorecard.Size = new System.Drawing.Size(228, 32);
@@ -463,7 +467,7 @@
             // btnDeleteScorecard
             // 
             this.btnDeleteScorecard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteScorecard.Location = new System.Drawing.Point(108, 816);
+            this.btnDeleteScorecard.Location = new System.Drawing.Point(57, 162);
             this.btnDeleteScorecard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteScorecard.Name = "btnDeleteScorecard";
             this.btnDeleteScorecard.Size = new System.Drawing.Size(228, 32);
@@ -472,19 +476,59 @@
             this.btnDeleteScorecard.UseVisualStyleBackColor = true;
             this.btnDeleteScorecard.Click += new System.EventHandler(this.btnDeleteScorecard_Click);
             // 
+            // btnPlayerStats
+            // 
+            this.btnPlayerStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayerStats.Location = new System.Drawing.Point(728, 24);
+            this.btnPlayerStats.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPlayerStats.Name = "btnPlayerStats";
+            this.btnPlayerStats.Size = new System.Drawing.Size(228, 32);
+            this.btnPlayerStats.TabIndex = 22;
+            this.btnPlayerStats.Text = "View Statistics";
+            this.btnPlayerStats.UseVisualStyleBackColor = true;
+            this.btnPlayerStats.Click += new System.EventHandler(this.btnPlayerStats_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnEditScorecard);
+            this.groupBox3.Controls.Add(this.btnDeleteScorecard);
+            this.groupBox3.Controls.Add(this.cmbRoundList);
+            this.groupBox3.Controls.Add(this.btnAddGolfer);
+            this.groupBox3.Controls.Add(this.btnCreateScorecard);
+            this.groupBox3.Controls.Add(this.btnEditGolfer);
+            this.groupBox3.Controls.Add(this.cmbGolferList);
+            this.groupBox3.Controls.Add(this.btnDeleteGolfer);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(12, 530);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(611, 220);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Manage Golfers and Scores";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(728, 716);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(228, 32);
+            this.btnClose.TabIndex = 22;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 913);
-            this.Controls.Add(this.btnDeleteScorecard);
-            this.Controls.Add(this.btnEditScorecard);
-            this.Controls.Add(this.cmbRoundList);
-            this.Controls.Add(this.btnCreateScorecard);
-            this.Controls.Add(this.btnDeleteGolfer);
-            this.Controls.Add(this.btnEditGolfer);
-            this.Controls.Add(this.cmbGolferList);
-            this.Controls.Add(this.btnAddGolfer);
+            this.ClientSize = new System.Drawing.Size(1083, 808);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.btnPlayerStats);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tblLeaderboard);
@@ -502,6 +546,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -540,6 +585,9 @@
         private System.Windows.Forms.ComboBox cmbRoundList;
         private System.Windows.Forms.Button btnEditScorecard;
         private System.Windows.Forms.Button btnDeleteScorecard;
+        private System.Windows.Forms.Button btnPlayerStats;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

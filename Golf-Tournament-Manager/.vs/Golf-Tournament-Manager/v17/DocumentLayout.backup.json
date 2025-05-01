@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|c:\\users\\braeden\\onedrive - dakota state university\\8 - spring 2025\\object oriented design\\final\\csc260-final\\golf-tournament-manager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|c:\\users\\braeden\\onedrive - dakota state university\\8 - spring 2025\\object oriented design\\final\\csc260-final\\golf-tournament-manager\\addgolferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:addgolferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|c:\\users\\braeden\\onedrive - dakota state university\\8 - spring 2025\\object oriented design\\final\\csc260-final\\golf-tournament-manager\\addgolferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:addgolferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,32 +19,16 @@
       "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\enterscoreform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:enterscoreform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|c:\\users\\braeden\\onedrive - dakota state university\\8 - spring 2025\\object oriented design\\final\\csc260-final\\golf-tournament-manager\\statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\editcourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:editcourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\enterscoreform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:enterscoreform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\round.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:round.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\editcourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:editcourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|c:\\users\\braeden\\onedrive - dakota state university\\8 - spring 2025\\object oriented design\\final\\csc260-final\\golf-tournament-manager\\statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\golfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:golfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{991D54C7-68D8-40C0-9AE9-570042BACA04}|Golf-Tournament-Manager.csproj|solutionrelative:course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,24 +38,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnterScoreForm.cs",
-              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EnterScoreForm.cs",
-              "RelativeDocumentMoniker": "EnterScoreForm.cs",
-              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EnterScoreForm.cs",
-              "RelativeToolTip": "EnterScoreForm.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAtwD8AAABRAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AddGolferForm.cs",
+              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\AddGolferForm.cs",
+              "RelativeDocumentMoniker": "AddGolferForm.cs",
+              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\AddGolferForm.cs",
+              "RelativeToolTip": "AddGolferForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T04:01:37.556Z",
+              "WhenOpened": "2025-05-01T04:13:54.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AddGolferForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\AddGolferForm.cs",
+              "RelativeDocumentMoniker": "AddGolferForm.cs",
+              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\AddGolferForm.cs [Design]",
+              "RelativeToolTip": "AddGolferForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T04:13:51.101Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StatsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\StatsForm.cs",
+              "RelativeDocumentMoniker": "StatsForm.cs",
+              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\StatsForm.cs [Design]",
+              "RelativeToolTip": "StatsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T03:29:45.347Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StatsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\StatsForm.cs",
+              "RelativeDocumentMoniker": "StatsForm.cs",
+              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\StatsForm.cs",
+              "RelativeToolTip": "StatsForm.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAhwBMBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T01:05:34.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -75,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAADwv2UAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwDUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T20:50:57.072Z",
               "EditorCaption": ""
@@ -89,31 +118,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EditCourseForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EditCourseForm.cs",
-              "RelativeDocumentMoniker": "EditCourseForm.cs",
-              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EditCourseForm.cs [Design]",
-              "RelativeToolTip": "EditCourseForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:43:19.388Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Round.cs",
-              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\Round.cs",
-              "RelativeDocumentMoniker": "Round.cs",
-              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\Round.cs",
-              "RelativeToolTip": "Round.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:46:48.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Golfer.cs",
               "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\Golfer.cs",
               "RelativeDocumentMoniker": "Golfer.cs",
@@ -122,43 +126,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T18:48:03.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\Course.cs",
-              "RelativeDocumentMoniker": "Course.cs",
-              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\Course.cs",
-              "RelativeToolTip": "Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T19:00:31.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditCourseForm.cs",
-              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EditCourseForm.cs",
-              "RelativeDocumentMoniker": "EditCourseForm.cs",
-              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EditCourseForm.cs",
-              "RelativeToolTip": "EditCourseForm.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAiwFAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T00:01:52.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnterScoreForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EnterScoreForm.cs",
-              "RelativeDocumentMoniker": "EnterScoreForm.cs",
-              "ToolTip": "C:\\Users\\Braeden\\OneDrive - Dakota State University\\8 - Spring 2025\\Object Oriented Design\\Final\\CSC260-Final\\Golf-Tournament-Manager\\EnterScoreForm.cs [Design]",
-              "RelativeToolTip": "EnterScoreForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T03:24:08.831Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

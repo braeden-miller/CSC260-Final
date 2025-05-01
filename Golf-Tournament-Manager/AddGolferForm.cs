@@ -20,15 +20,22 @@ namespace Golf_Tournament_Manager
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            NewGolfer = new Golfer
+            if (txtFirstName.Text.Length > 0 || txtLastName.Text.Length > 0)
             {
-                FirstName = txtFirstName.Text.Trim(),
-                LastName = txtLastName.Text.Trim(),
-                HandicapIndex = (double)numHandicap.Value
-            };
+                NewGolfer = new Golfer
+                {
+                    FirstName = txtFirstName.Text.Trim(),
+                    LastName = txtLastName.Text.Trim(),
+                    HandicapIndex = (double)numHandicap.Value
+                };
 
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a name.");
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

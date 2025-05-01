@@ -91,6 +91,7 @@ namespace Golf_Tournament_Manager
                 cmbRoundList.Enabled = false;
                 btnEditScorecard.Enabled = false;
                 btnDeleteScorecard.Enabled = false;
+                btnPlayerStats.Enabled = false;
             }
             else
             {
@@ -98,6 +99,7 @@ namespace Golf_Tournament_Manager
                 btnDeleteGolfer.Enabled = true;
                 cmbGolferList.Enabled = true;
                 btnCreateScorecard.Enabled = true;
+                btnPlayerStats.Enabled = true;
                 cmbGolferList.SelectedIndex = 0;
             }
         }
@@ -260,6 +262,20 @@ namespace Golf_Tournament_Manager
                 selectedGolfer.Rounds.Remove(round);
                 cmbGolferList_SelectedIndexChanged(sender, e);
                 MainFormRefresh();
+            }
+        }
+
+        private void btnPlayerStats_Click(object sender, EventArgs e)
+        {
+            new frmGolferStats(golfers, course, tournament.Handicapped, tournament.Rounds).ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            var confirmationForm = new frmConfirm();
+            if (confirmationForm.ShowDialog() == DialogResult.OK)
+            {
+                this.Close();
             }
         }
     }
